@@ -3,6 +3,7 @@ package com.xample.titled.service;
 import com.xample.titled.model.Model;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -18,8 +19,11 @@ public class ModelServiceImplTest {
     }
 
     @Test
-    public void testGetModelById() {
-        assertEquals(modelService.getModelById(1), modelA);
+    @Timeout(5)
+    public void testGetModelById() throws InterruptedException {
+        // Uncomment the below line to fail the test
+        // Thread.sleep(10_000);
+        assertEquals(modelService.getModelById(2), modelA);
     }
 
     @Test

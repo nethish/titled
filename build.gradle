@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'idea'
+    id 'org.gradle.test-retry' version '1.2.1'
 }
 
 group 'org.xample'
@@ -15,5 +17,8 @@ dependencies {
 }
 
 test {
+    retry {
+        maxRetries = 1
+    }
     useJUnitPlatform()
 }
