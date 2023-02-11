@@ -2,17 +2,16 @@ package com.xample.titled;
 
 import com.xample.titled.service.ModelService;
 import com.xample.titled.service.ModelServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
-//        ModelService modelService = new ModelServiceImpl();
-//        modelService.putModel(1, "one");
-//        modelService.putModel(2, "tow");
-//        System.out.println(modelService.getModelById(1));
-//        System.out.println(modelService.getModelByName("tow"));
+        ApplicationContext context = SpringApplication.run(Main.class, args);
     }
 }

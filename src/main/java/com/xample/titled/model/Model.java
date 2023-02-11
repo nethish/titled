@@ -6,6 +6,8 @@ public class Model {
     private String name;
     private Integer id;
 
+    public Model() {}
+
     public Model(Integer id, String name) {
         this.name = name;
         this.id = id;
