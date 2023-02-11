@@ -2,10 +2,12 @@ package com.xample.titled.service;
 
 import com.xample.titled.model.Model;
 import com.xample.titled.validator.ModelValidator;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class ModelServiceImpl implements ModelService {
     private Map<Integer, Model> dataById = new HashMap<>();
     private Map<String, Model> dataByName = new HashMap<>();
