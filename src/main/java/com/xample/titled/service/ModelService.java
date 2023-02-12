@@ -17,5 +17,11 @@ public interface ModelService {
      */
     Model getModelByName(String name);
 
+    /**
+     * Create data point
+     * @param id Integer
+     * @param name String
+     * @return Returns created model
+     */
     Model putModel(Integer id, String name);
 }

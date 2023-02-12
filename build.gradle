@@ -22,4 +22,8 @@ test {
         maxRetries = 1
     }
     useJUnitPlatform()
+
+    testLogging {
+        events "passed"
+    }
 }

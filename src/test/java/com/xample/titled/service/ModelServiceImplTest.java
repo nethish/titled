@@ -23,7 +23,7 @@ public class ModelServiceImplTest {
     public void testGetModelById() throws InterruptedException {
         // Uncomment the below line to fail the test
         // Thread.sleep(10_000);
-        assertEquals(modelService.getModelById(2), modelA);
+        assertEquals(modelService.getModelById(1), modelA);
     }
 
     @Test
